@@ -1,0 +1,28 @@
+//
+//  JXSinaWeibo-Prefix.pch
+//  JXSinaWeibo
+//
+//  Created by 景晓峰 on 16/9/20.
+//  Copyright © 2016年 JX. All rights reserved.
+//
+
+#ifndef JXSinaWeibo_Prefix_pch
+#define JXSinaWeibo_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import <AlipaySDK/AlipaySDK.h>
+#import "WeiboSDK.h"
+#import <Masonry.h>
+#import "SVProgressHUD.h"
+
+#define kAppKey @"847520506"
+#define kRedirectURL @"http://www.sina.com"
+#define kApiBaseURL  @"https://api.weibo.com/2/"
+
+#import "AccountModel.h"
+#import "NWAllRequest.h"
+
+#endif /* JXSinaWeibo_Prefix_pch */
