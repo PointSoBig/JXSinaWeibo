@@ -77,7 +77,7 @@
 {
     WeiboRequest *weiboRequest = [[WeiboRequest alloc] init];
     [weiboRequest publishWeiboWithStatus:@"发一条微博" visible:0 list_id:nil lat:35.69466958906191 long:139.73038369140625 annotations:nil rip:nil];
-    weiboRequest.block = ^(id responseObj)
+    weiboRequest.completedblock = ^(id responseObj)
     {
         [SVProgressHUD showSuccessWithStatus:@"发布成功"];
     };
@@ -87,7 +87,7 @@
 {
     LocationServiceRequest *locationReq = [[LocationServiceRequest alloc] init];
     [locationReq requestLocationPointNearbyWithLat:35.69466958906191 long:139.73038369140625 range:10000 q:nil category:nil count:5 page:1 sort:0 offset:0];
-    locationReq.block = ^(id responseObj)
+    locationReq.completedblock = ^(id responseObj)
     {
         [SVProgressHUD showSuccessWithStatus:@"刷新成功"];
     };
@@ -97,7 +97,7 @@
 {
     LocationServiceRequest *locationReq = [[LocationServiceRequest alloc] init];
     [locationReq requestPointChinckinWithPoiid:@"B2094757D16BA6F8409D" status:@"..签个到" pic:nil public:1];
-    locationReq.block = ^(id responseObj)
+    locationReq.completedblock = ^(id responseObj)
     {
         [SVProgressHUD showSuccessWithStatus:@"刷新成功"];
     };
@@ -107,7 +107,7 @@
 {
     WeiboRequest *weiboReq = [[WeiboRequest alloc] init];
     [weiboReq requestGetNewWeiboFromCurrentUserAndHisFriendsWithSince_id:0 max_id:0 count:10 page:1 base_app:0 feature:0 trim_user:0];
-    weiboReq.block = ^(id responseObj)
+    weiboReq.completedblock = ^(id responseObj)
     {
         [SVProgressHUD showSuccessWithStatus:@"刷新成功"];
     };

@@ -12,11 +12,14 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height
 
 #import <AlipaySDK/AlipaySDK.h>
 #import "WeiboSDK.h"
-#import <Masonry.h>
+#import "Masonry.h"
 #import "SVProgressHUD.h"
+#import <SnapKit/SnapKit-Swift.h>
 
 #define kAppKey @"847520506"
 #define kRedirectURL @"http://www.sina.com"

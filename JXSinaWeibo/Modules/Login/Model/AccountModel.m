@@ -7,7 +7,7 @@
 //
 
 #import "AccountModel.h"
-#import "SSKeychain.h"
+#import <SSKeychain/SSKeychain.h>
 
 NSString *const kKeyChainService_accessToken = @"JXWeiboKeyChainService_accessToken";
 NSString *const kKeyChainAccount = @"JXWeiboKeyChainAccount";

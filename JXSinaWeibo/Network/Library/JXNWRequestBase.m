@@ -25,9 +25,9 @@
         [manager GET:urlStr parameters:_parameters success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject)
         {
              [self requestCompleted:operation];
-             if (self.block)
+             if (self.completedblock)
              {
-                 self.block(responseObject);
+                 self.completedblock(responseObject);
              }
         }
              failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error)
@@ -41,9 +41,9 @@
         [manager POST:urlStr parameters:_parameters success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject)
         {
             [self requestCompleted:operation];
-            if (self.block)
+            if (self.completedblock)
             {
-                self.block(responseObject);
+                self.completedblock(responseObject);
             }
         } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error)
         {
@@ -57,7 +57,10 @@
 {
     id response = completedOperation.responseObject;
     
-    NSLog(@"返回数据：%@", response ? response : completedOperation.responseString);
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:response options:NSJSONWritingPrettyPrinted error:nil];
+    NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    NSLog(@"返回数据：%@", jsonStr ? :completedOperation.responseString);
     
     if (completedOperation.response.statusCode == 0) {
         NSString *errorDescription = [completedOperation.error.userInfo objectForKey:@"NSLocalizedDescription"];

@@ -24,7 +24,7 @@ typedef void(^completeRequest)(id);
 
 @property (nonatomic, copy) NSString *path;
 
-@property (nonatomic, assign) completeRequest block;
+@property (nonatomic, assign) completeRequest completedblock;
 
 @property (nonatomic, assign) BOOL showLoading;
 

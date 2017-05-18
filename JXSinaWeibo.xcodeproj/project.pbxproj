@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0D1476A041528E479BAB08D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C19D85C0CEC078D14AC4DDCC /* libPods.a */; };
+		6040C13FBBA5A8905160C9E7 /* Pods_JXSinaWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA2790728663E265E71A8FF /* Pods_JXSinaWeibo.framework */; };
+		9CE68A211ECD2B7100D9BAFA /* WbListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE68A201ECD2B7100D9BAFA /* WbListVC.m */; };
+		9CE68A241ECD413900D9BAFA /* WbBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE68A231ECD413900D9BAFA /* WbBaseCell.m */; };
 		EF04D3B21D8FC77A00F10D2F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF04D3B11D8FC77A00F10D2F /* ImageIO.framework */; };
 		EF04D3B41D8FC79500F10D2F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF04D3B31D8FC79500F10D2F /* Security.framework */; };
 		EF04D3B61D8FC7CF00F10D2F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EF04D3B51D8FC7CF00F10D2F /* libsqlite3.tbd */; };
@@ -26,8 +28,6 @@
 		EF3EAAF91D925AE400B1625C /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3EAAF81D925AE400B1625C /* BaseModel.m */; };
 		EF4324EC1D98EEB40051A9C7 /* WeiboShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4324EB1D98EEB40051A9C7 /* WeiboShowCell.m */; };
 		EF68C8EF1D9374CA00839BCB /* WeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EF68C8EE1D9374CA00839BCB /* WeiboRequest.m */; };
-		EF68C8F91D93BDAC00839BCB /* NetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF68C8F81D93BDAC00839BCB /* NetworkOperation.m */; };
-		EF68C8FC1D93BDB600839BCB /* NetworkRequestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EF68C8FB1D93BDB600839BCB /* NetworkRequestBase.m */; };
 		EF68C8FF1D93BE8700839BCB /* JXNWRequestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EF68C8FE1D93BE8700839BCB /* JXNWRequestBase.m */; };
 		EF7C3BDE1D9261BF001B796F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C3BCC1D9261BF001B796F /* AFHTTPRequestOperation.m */; };
 		EF7C3BDF1D9261BF001B796F /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C3BCE1D9261BF001B796F /* AFHTTPRequestOperationManager.m */; };
@@ -56,9 +56,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8ADDC2E609405DF64366A9DF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		AD5F6B2F0AD4BE1112C77E7C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		C19D85C0CEC078D14AC4DDCC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA2790728663E265E71A8FF /* Pods_JXSinaWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXSinaWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE68A1F1ECD2B7100D9BAFA /* WbListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WbListVC.h; sourceTree = "<group>"; };
+		9CE68A201ECD2B7100D9BAFA /* WbListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WbListVC.m; sourceTree = "<group>"; };
+		9CE68A221ECD413900D9BAFA /* WbBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WbBaseCell.h; sourceTree = "<group>"; };
+		9CE68A231ECD413900D9BAFA /* WbBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WbBaseCell.m; sourceTree = "<group>"; };
+		A3FD7B990B53E61C54EBF692 /* Pods-JXSinaWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXSinaWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JXSinaWeibo/Pods-JXSinaWeibo.debug.xcconfig"; sourceTree = "<group>"; };
+		E45CC5B0FB62C693F45CEC67 /* Pods-JXSinaWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXSinaWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JXSinaWeibo/Pods-JXSinaWeibo.release.xcconfig"; sourceTree = "<group>"; };
 		EF04D3B11D8FC77A00F10D2F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		EF04D3B31D8FC79500F10D2F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		EF04D3B51D8FC7CF00F10D2F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -101,10 +105,6 @@
 		EF68C8ED1D9374CA00839BCB /* WeiboRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboRequest.h; sourceTree = "<group>"; };
 		EF68C8EE1D9374CA00839BCB /* WeiboRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboRequest.m; sourceTree = "<group>"; };
 		EF68C8F01D937BEB00839BCB /* NWAllRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWAllRequest.h; sourceTree = "<group>"; };
-		EF68C8F71D93BDAC00839BCB /* NetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkOperation.h; sourceTree = "<group>"; };
-		EF68C8F81D93BDAC00839BCB /* NetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkOperation.m; sourceTree = "<group>"; };
-		EF68C8FA1D93BDB600839BCB /* NetworkRequestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkRequestBase.h; sourceTree = "<group>"; };
-		EF68C8FB1D93BDB600839BCB /* NetworkRequestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkRequestBase.m; sourceTree = "<group>"; };
 		EF68C8FD1D93BE8700839BCB /* JXNWRequestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXNWRequestBase.h; sourceTree = "<group>"; };
 		EF68C8FE1D93BE8700839BCB /* JXNWRequestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXNWRequestBase.m; sourceTree = "<group>"; };
 		EF7C3BCB1D9261BF001B796F /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -168,18 +168,18 @@
 				EF9DA3C31D8E894100A9F9DD /* CFNetwork.framework in Frameworks */,
 				EF9DA3C11D8E893900A9F9DD /* CoreMotion.framework in Frameworks */,
 				EF9DA3BF1D8E892300A9F9DD /* UIKit.framework in Frameworks */,
-				A0D1476A041528E479BAB08D /* libPods.a in Frameworks */,
+				6040C13FBBA5A8905160C9E7 /* Pods_JXSinaWeibo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09A2061F7283ED124E08DB48 /* Pods */ = {
+		4DB8DDB93ABA5CBD0A4FEC65 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AD5F6B2F0AD4BE1112C77E7C /* Pods.debug.xcconfig */,
-				8ADDC2E609405DF64366A9DF /* Pods.release.xcconfig */,
+				A3FD7B990B53E61C54EBF692 /* Pods-JXSinaWeibo.debug.xcconfig */,
+				E45CC5B0FB62C693F45CEC67 /* Pods-JXSinaWeibo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -190,7 +190,7 @@
 				EF9DA3D41D8E8BE700A9F9DD /* Frameworks */,
 				EF291B191D8E300E001BB82F /* JXSinaWeibo */,
 				EF291B181D8E300E001BB82F /* Products */,
-				09A2061F7283ED124E08DB48 /* Pods */,
+				4DB8DDB93ABA5CBD0A4FEC65 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -273,6 +273,8 @@
 				EF4324E91D98EE710051A9C7 /* view */,
 				EF2C508D1D913D9A00A885D6 /* MainViewController.h */,
 				EF2C508E1D913D9A00A885D6 /* MainViewController.m */,
+				9CE68A1F1ECD2B7100D9BAFA /* WbListVC.h */,
+				9CE68A201ECD2B7100D9BAFA /* WbListVC.m */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -392,10 +394,6 @@
 		EF3EAAFB1D925BC600B1625C /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				EF68C8FA1D93BDB600839BCB /* NetworkRequestBase.h */,
-				EF68C8FB1D93BDB600839BCB /* NetworkRequestBase.m */,
-				EF68C8F71D93BDAC00839BCB /* NetworkOperation.h */,
-				EF68C8F81D93BDAC00839BCB /* NetworkOperation.m */,
 				EF68C8FD1D93BE8700839BCB /* JXNWRequestBase.h */,
 				EF68C8FE1D93BE8700839BCB /* JXNWRequestBase.m */,
 			);
@@ -426,6 +424,8 @@
 			children = (
 				EF4324EA1D98EEB40051A9C7 /* WeiboShowCell.h */,
 				EF4324EB1D98EEB40051A9C7 /* WeiboShowCell.m */,
+				9CE68A221ECD413900D9BAFA /* WbBaseCell.h */,
+				9CE68A231ECD413900D9BAFA /* WbBaseCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -473,7 +473,7 @@
 				EF9DA3C21D8E894100A9F9DD /* CFNetwork.framework */,
 				EF9DA3C01D8E893900A9F9DD /* CoreMotion.framework */,
 				EF9DA3BE1D8E892300A9F9DD /* UIKit.framework */,
-				C19D85C0CEC078D14AC4DDCC /* libPods.a */,
+				6FA2790728663E265E71A8FF /* Pods_JXSinaWeibo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -494,12 +494,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF291B2E1D8E300E001BB82F /* Build configuration list for PBXNativeTarget "JXSinaWeibo" */;
 			buildPhases = (
-				52006F3B44053579D59F0461 /* Check Pods Manifest.lock */,
+				97FE013F674C4C7EC1D055A4 /* [CP] Check Pods Manifest.lock */,
 				EF291B131D8E300E001BB82F /* Sources */,
 				EF291B141D8E300E001BB82F /* Frameworks */,
 				EF291B151D8E300E001BB82F /* Resources */,
-				F8446B4FA22146960D61A4A5 /* Embed Pods Frameworks */,
-				A16BF516B02958500DF23542 /* Copy Pods Resources */,
+				71C75457E218D3B9C6497DF0 /* [CP] Embed Pods Frameworks */,
+				3BAF507E9BD47CBBEB726FCB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -521,6 +521,7 @@
 				TargetAttributes = {
 					EF291B161D8E300E001BB82F = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -556,49 +557,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		52006F3B44053579D59F0461 /* Check Pods Manifest.lock */ = {
+		3BAF507E9BD47CBBEB726FCB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JXSinaWeibo/Pods-JXSinaWeibo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A16BF516B02958500DF23542 /* Copy Pods Resources */ = {
+		71C75457E218D3B9C6497DF0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JXSinaWeibo/Pods-JXSinaWeibo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F8446B4FA22146960D61A4A5 /* Embed Pods Frameworks */ = {
+		97FE013F674C4C7EC1D055A4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -611,11 +612,12 @@
 				EFFFD84F1D950C66006C9BCF /* ParameterHelper.m in Sources */,
 				EF7C3BE31D9261BF001B796F /* AFURLConnectionOperation.m in Sources */,
 				EF2C50981D913D9A00A885D6 /* MsgViewController.m in Sources */,
+				9CE68A241ECD413900D9BAFA /* WbBaseCell.m in Sources */,
 				EF7C3BE21D9261BF001B796F /* AFSecurityPolicy.m in Sources */,
-				EF68C8FC1D93BDB600839BCB /* NetworkRequestBase.m in Sources */,
 				EF291B1F1D8E300E001BB82F /* AppDelegate.m in Sources */,
 				EF7C3BDF1D9261BF001B796F /* AFHTTPRequestOperationManager.m in Sources */,
 				EF3EAAF91D925AE400B1625C /* BaseModel.m in Sources */,
+				9CE68A211ECD2B7100D9BAFA /* WbListVC.m in Sources */,
 				EF2C50951D913D9A00A885D6 /* DiscoverViewController.m in Sources */,
 				EF7C3BE91D928408001B796F /* AccountModel.m in Sources */,
 				EF2C50971D913D9A00A885D6 /* MineViewController.m in Sources */,
@@ -624,7 +626,6 @@
 				EF7C3BE61D9261BF001B796F /* AFURLSessionManager.m in Sources */,
 				EF7C3BE51D9261BF001B796F /* AFURLResponseSerialization.m in Sources */,
 				EF4324EC1D98EEB40051A9C7 /* WeiboShowCell.m in Sources */,
-				EF68C8F91D93BDAC00839BCB /* NetworkOperation.m in Sources */,
 				EF291B1C1D8E300E001BB82F /* main.m in Sources */,
 				EF7C3BE41D9261BF001B796F /* AFURLRequestSerialization.m in Sources */,
 				EF7C3BE11D9261BF001B796F /* AFNetworkReachabilityManager.m in Sources */,
@@ -723,16 +724,17 @@
 		};
 		EF291B2F1D8E300E001BB82F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD5F6B2F0AD4BE1112C77E7C /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A3FD7B990B53E61C54EBF692 /* Pods-JXSinaWeibo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JXSinaWeibo",
 					"$(PROJECT_DIR)/JXSinaWeibo/Modules/Vendors/Alipay",
 				);
-				GCC_PREFIX_HEADER = "/Users/machirohiko/Desktop/JXSinaWeibo/JXSinaWeibo/JXSinaWeibo-Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JXSinaWeibo/JXSinaWeibo-Prefix.pch";
 				INFOPLIST_FILE = JXSinaWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -743,21 +745,25 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JXSina.JXSinaWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REEXPORTED_LIBRARY_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "JXSinaWeibo/Modules/Main/HomePage/JXSinaWeibo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		EF291B301D8E300E001BB82F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8ADDC2E609405DF64366A9DF /* Pods.release.xcconfig */;
+			baseConfigurationReference = E45CC5B0FB62C693F45CEC67 /* Pods-JXSinaWeibo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JXSinaWeibo",
 					"$(PROJECT_DIR)/JXSinaWeibo/Modules/Vendors/Alipay",
 				);
-				GCC_PREFIX_HEADER = "/Users/machirohiko/Desktop/JXSinaWeibo/JXSinaWeibo/JXSinaWeibo-Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JXSinaWeibo/JXSinaWeibo-Prefix.pch";
 				INFOPLIST_FILE = JXSinaWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -768,6 +774,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JXSina.JXSinaWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REEXPORTED_LIBRARY_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "JXSinaWeibo/Modules/Main/HomePage/JXSinaWeibo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

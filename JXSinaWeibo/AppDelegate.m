@@ -175,7 +175,7 @@
     }
     else if ([response isKindOfClass:WBPaymentResponse.class])
     {
-        NSString *title = NSLocalizedString(@"支付结果", nil);
+        NSString *title = NSLocalizedString(@"支付结果", nil); 
         NSString *message = [NSString stringWithFormat:@"%@: %d\nresponse.payStatusCode: %@\nresponse.payStatusMessage: %@\n%@: %@\n%@: %@", NSLocalizedString(@"响应状态", nil), (int)response.statusCode,[(WBPaymentResponse *)response payStatusCode], [(WBPaymentResponse *)response payStatusMessage], NSLocalizedString(@"响应UserInfo数据", nil),response.userInfo, NSLocalizedString(@"原请求UserInfo数据", nil), response.requestUserInfo];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
                                                         message:message
